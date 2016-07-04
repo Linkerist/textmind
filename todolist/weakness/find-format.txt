@@ -1,0 +1,46 @@
+
+find ./ -name "*.c",
+the output is too hard to find, the file system should not be this way
+
+./symbol/bitwise/find_odd.c
+./symbol/bitwise/xor.c
+./symbol/priority/ahifa.c
+./symbol/priority/priority.c
+./symbol/priority/type-convert/type_change_arith.c
+./symbol/logic/logic_shortcut_1.c
+./symbol/logic/logic_shortcut.c
+./symbol/logic/logic_triangle.c
+./symbol/quotation/example.c
+./symbol/quotation/quotation.c
+./keyword/typedef/typedef.c
+./keyword/enum/enum.c
+./keyword/attribute-keyword/haha.c
+./keyword/attribute-keyword/static_i.c
+./keyword/extern/extern_int.c
+./keyword/const/const_var.c
+./keyword/const/func-param-and-ret/const_ret.c
+./keyword/const/array.c
+./keyword/const/const-pointer/const_ptr_left.c
+./keyword/const/const-pointer/const_ptr_both.c
+./keyword/const/const-pointer/const_ptr_right.c
+./keyword/void/void.c
+./keyword/struct/struct_null.c
+./keyword/struct/soft-array.c
+./keyword/union/endian.c
+./keyword/union/union.c
+./keyword/sizeof.c
+./keyword/do-while-0/do-while-0.c
+./basic_datatype/integer.c
+./precompile/macro/cpp_if_endif.c
+./precompile/macro/macro_undef.c
+./precompile/macro/macro_dim.c
+./precompile/preprocess/pragma/pragma_message.c
+./precompile/preprocess/pragma/pragma_pack.c
+./precompile/preprocess/poundpound.c
+./precompile/preprocess/pound.c
+./precompile/asf#_test.c
+[root@Linkerist-Lenovo-G500:19:54:14: /doc/c #] 
+[root@Linkerist-Lenovo-G500:19:54:38: /doc/c #] 
+[root@Linkerist-Lenovo-G500:19:54:38: /doc/c #] 
+[root@Linkerist-Lenovo-G500:19:55:14: /doc/c #]
+
