@@ -1,0 +1,15 @@
+
+======================================================
+
+text mind is defined to a mind map software, it is suppose to be a graphical draw, it makes graceful skeleton and lines for sth. in memory and in reality although there is text console only.
+
+		/_________________\			\_________________/
+		|		  |			|		  |
+		| textmind v0.1	  | ------------------  |   Linkerist	  |
+		|_________________|			|_________________|
+		\		  /			/		  \
+
+I should know more about the format output base on the standard I/O.
+
+========================================================
+
