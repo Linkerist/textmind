@@ -147,3 +147,19 @@ let me use the arrow to indicate the relationship
 
 ====================================================
 
+/**
+ * @verbatim
+ *        prev_code_target
+ *        |                prev_code_target + offset
+ *        |                |
+ * <----->if ((aaa == bbb) && xxx
+ *            && xxx
+ *            |
+ *            new_code_target
+ * @endverbatim
+ */
+
+it is a good graph for the a statement in C
+
+=====================================================
+
