@@ -1,0 +1,3 @@
+
+I use the old text terminal by chance, it looks well, and textmind should support the old terminal.
+
