@@ -1,0 +1,9 @@
+
+My friend, chaohui, introduce a tool to me which he has used before.
+
+He said metasploit is a permeate tool for hackers, it is awesome!
+
+For textmind, I concern to the text drawing and painting function in major.
+
+I should read the implementation script of this module in my part time.
+
