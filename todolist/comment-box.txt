@@ -1,3 +1,6 @@
+
+===========================================================================
+
 /* Output the generated parsing program for Bison.
 
    Copyright (C) 1984, 1986, 1989, 1992, 2000-2012 Free Software
@@ -451,3 +454,69 @@ compute_pkgdatadir (void)
   char const *pkgdatadir = getenv ("BISON_PKGDATADIR");
   return pkgdatadir ? pkgdatadir : PKGDATADIR;
 }
+
+
+=================================================================
+
+
+    // in order to keep the errors associated with the linear
+    // interpolation of the coefficients below the quantization error
+    // we must satisfy:
+    //   2^nz >= 2^(nc/2)
+    //
+    // for 16 bit coefficients that would be 256
+    //
+    // note that increasing nz only increases memory requirements,
+    // but doesn't increase the amount of computation to do.
+    //
+    //
+    // see:
+    // Smith, J.O. Digital Audio Resampling Home Page
+    // https://ccrma.stanford.edu/~jos/resample/, 2011-03-29
+    //
+
+    //         | 0.1102*(A - 8.7)                         A > 50
+    //  beta = | 0.5842*(A - 21)^0.4 + 0.07886*(A - 21)   21 <= A <= 50
+    //         | 0                                        A < 21
+    //   with A is the desired stop-band attenuation in dBFS
+    //
+    // for eg:
+    //
+    //    30 dB    2.210
+    //    40 dB    3.384
+    //    50 dB    4.538
+    //    60 dB    5.658
+    //    70 dB    6.764
+    //    80 dB    7.865
+    //    90 dB    8.960
+    //   100 dB   10.056
+    double beta = 7.865;
+
+    // 2*nzc = (A - 8) / (2.285 * dw)
+    //      with dw the transition width = 2*pi*dF/Fs
+    //
+    int nzc = 8;
+
+    /*
+     * Example:
+     * 44.1 KHz to 48 KHz resampling
+     * 100 dB rejection above 28 KHz
+     *   (the spectrum will fold around 24 KHz and we want 100 dB rejection
+     *    at the point where the folding reaches 20 KHz)
+     *  ...___|_____
+     *        |     \|
+     *        | ____/|\____
+     *        |/alias|     \
+     *  ------/------+------\---------> KHz
+     *       20     24     28
+     *
+     * Transition band 8 KHz, or dw = 1.0472
+     *
+     * beta = 10.056
+     * nzc  = 20
+     */
+
+// http://www.csee.umbc.edu/help/sound/AFsp-V2R1/html/audio/ResampAudio.html
+
+=====================================================
+
