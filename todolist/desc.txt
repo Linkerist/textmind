@@ -1,3 +1,5 @@
 
 if you click the map topic, it canbe jump to another, faster than graphical interface.
 
+There are lots of operations about file in textmind, should I create a repository to maintain the file browser like windows.?
+
