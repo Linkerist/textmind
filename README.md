@@ -7,6 +7,8 @@ textmind - mind map base on command interface and text mode totally
 
 	It is textmind, you do not need extras of additional packages and etc. Draw your map on the goddamn black terminal.
 
+	Textmind is a definitely important project, it helps programmer work comfortable on non-graphic environment.
+
 	Any ideas are welcome.
 
 												-- Linkerist
